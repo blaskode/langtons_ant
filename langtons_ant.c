@@ -27,6 +27,13 @@
 #define BLACK_SQUARE '#'
 #define WHITE_SQUARE ' '
 #define ANT '*'
+#define MAX_ROWS 50
+#define MAX_COLS 50
+#define MAX_TURNS 1000
+#define UNREASONABLE_ROWS (num_rows < 1 || num_rows > MAX_ROWS)
+#define UNREASONABLE_COLS (num_cols < 1 || num_cols > MAX_COLS) 
+#define UNREASONABLE_TURNS (turns < 0 || turns > MAX_TURNS)
+						
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -177,11 +184,30 @@ void move(struct board * board_, int x, int y){
 }
 
 int main(int argc, char *argv[]){
+	/* We'll start by checking to see that there are the correct number*/
+	/* of command-line arguments to main */
+	if (argc < 4 || argc > 5) {
+		fprintf(stderr, "Wrong number of arguments. There should be three.\n");
+		fprintf(stderr, "(1) number of rows, (2) number of columns, and \n");
+		fprintf(stderr, "(3) number of times the ant moves.\n");
+		exit(EXIT_FAILURE);
+	}
+
 	/* we'll start by extracting the three necessary arguments */
 	/* from the command-line */
 	int num_rows = atoi(argv[1]);
 	int num_cols = atoi(argv[2]);
 	int turns = atoi(argv[3]);
+
+	if(UNREASONABLE_ROWS || UNREASONABLE_COLS || UNREASONABLE_TURNS){
+		fprintf(stderr, "Numerical arguments are out of bounds.\n");
+		fprintf(stderr, "Acceptable: [1, %d] [1, %d] [0, %d]\n",
+			MAX_ROWS, MAX_COLS, MAX_TURNS);
+		exit(EXIT_FAILURE);
+	}
+
+
+
 
 	/* now, we need a random set of coordinates to place our ant */
 	srand(time(NULL));
@@ -246,5 +272,5 @@ int main(int argc, char *argv[]){
 		print_board(myBoard);
 	}
 	free_board(myBoard);
-	return 0;
+	return EXIT_SUCCESS;
 }
