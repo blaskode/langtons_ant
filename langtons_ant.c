@@ -29,7 +29,7 @@
 #define ANT '*'
 #define MAX_ROWS 50
 #define MAX_COLS 50
-#define MAX_TURNS 1000
+#define MAX_TURNS 100000
 #define UNREASONABLE_ROWS (num_rows < 1 || num_rows > MAX_ROWS)
 #define UNREASONABLE_COLS (num_cols < 1 || num_cols > MAX_COLS) 
 #define UNREASONABLE_TURNS (turns < 0 || turns > MAX_TURNS)
