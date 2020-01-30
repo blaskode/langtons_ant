@@ -1,5 +1,6 @@
 # langtons_ant.c
-<p>An implementation of Langton's Ant using the C 2018 standard.
+<p>An implementation of <a href="https://en.wikipedia.org/wiki/Langton%27s_ant">Langton's Ant</a> using the C 2018 standard.
+	
 </p>
 
 ### Some properties of Langton's Ant
