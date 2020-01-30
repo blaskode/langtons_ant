@@ -9,7 +9,7 @@
 		The Ant is denoted by a '*' char that is analogous to a read/write head.
 		</li>
 		<li> 
-		Memory cells are represented by a two-dimensional char array. Each cell is like a square on a chessboard. Each cell can either contain a ' ', or a '#'. We call these two states "black" and "white." 
+		Memory cells are represented by a two-dimensional char array. Each cell is like a square on a chessboard. Each cell can either contain a '#', or a ' '. We call these two states "black" and "white." 
 		</li>
 		<li>
 		The Ant can move forward, change orientation by 90 degrees (clockwise or counterclockwise), and be seated on either a black or a white square.
