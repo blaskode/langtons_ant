@@ -8,6 +8,6 @@
 #calling 'make clean' will delete the executable without touching the source code
 
 main:
-	gcc langtons_ant.c -o langtons_ant.out
+	gcc -std=c18 langtons_ant.c -o langtons_ant.out
 clean:
 	rm langtons_ant.out
