@@ -1,6 +1,5 @@
-# langtons_ant.c
+# langtons_ant.c 
 <p>An implementation of <a href="https://en.wikipedia.org/wiki/Langton%27s_ant">Langton's Ant</a> using the C 2018 standard.
-	
 </p>
 
 ### Some properties of Langton's Ant
@@ -23,9 +22,38 @@
 
 
 <p>
-	Because our program is composed of a read/write head (1) that can execute a discrete number of operations (3)  upon a geographic arrangement of discrete memory cells (2), Langton's Ant is a Turning Machine. 
+	Because our program is composed of a read/write head (1) that can execute a discrete number of operations (3)  upon a geographic arrangement of discrete memory cells (2), Langton's Ant is a Turing Machine. 
 </p>
 
 <p>
 	Furthermore, because the Ant has no notion of history (4), and there are a discrete number of head-states (by combining 2, and 3), Langton's Ant can be modeled by automata. This can be implemented with the help of a doubly-linked list.
 </p>
+
+## Build Instructions
+<p>
+	<ol>
+		<li>
+			Clone or download.
+		</li>
+		<li>
+			Open a terminal windows, navigate to this project's directory. 
+		</li>
+		<li>
+			Enter this command at the prompt: <br> <em>make</em> 
+		</li>
+	</ol>
+<p>
+Now you have an executable sitting in your working directory called <em>langtons_ant.out</em>
+</p>
+
+<p>
+It can be invoked with three integers as arguments:
+<br><em>./langtons_ant.out [rows] [columns] [turns]</em>
+</p>
+
+<p>
+Here's an example: <br> ./langtons_ant.out 15 12 45
+</p>
+
+
+
