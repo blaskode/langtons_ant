@@ -42,6 +42,8 @@
 			Enter this command at the prompt: <br> <em>make</em> 
 		</li>
 	</ol>
+</p>
+
 <p>
 Now you have an executable sitting in your working directory called <em>langtons_ant.out</em>
 </p>
@@ -49,15 +51,13 @@ Now you have an executable sitting in your working directory called <em>langtons
 <p>
 It can be invoked with three integers as arguments:
 <br><em>./langtons_ant.out &lt;rows&gt; &lt;columns&gt; &lt;turns&gt;</em>
-
-		
 </p>
 
 <p>
 	Example: <br> <em>./langtons_ant.out 15 12 45</em>
 </p>
 
-##Example
+## Example
 <p>
 	Example: <br> <em>./langtons_ant.out 15 12 25000</em>
 </p>
