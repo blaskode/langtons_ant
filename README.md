@@ -1,5 +1,5 @@
 ##langtons_ant.c 
-<p>&nbsp; An implementation of <a href="https://en.wikipedia.org/wiki/Langton%27s_ant">Langton's Ant</a> using the C 2018 standard.
+<p>&nbsp; An implementation of <a href="https://en.wikipedia.org/wiki/Langton%27s_ant">Langton's Ant</a> using the C 2018 standard. Note that the initial placement of the Ant in this program is at random.
 </p>
 
 ### Some properties of Langton's Ant
@@ -45,21 +45,19 @@
 </p>
 
 <p>
-Now you have an executable sitting in your working directory called <em>langtons_ant.out</em>
+&nbsp; Now you have an executable sitting in your working directory called <em>langtons_ant.out</em>
 </p>
 
 <p>
-It can be invoked with three integers as arguments:
+&nbsp; It can be invoked with three integers as arguments:
 <br><em>./langtons_ant.out &lt;rows&gt; &lt;columns&gt; &lt;turns&gt;</em>
 </p>
 
-<p>
-	Example: <br> <em>./langtons_ant.out 15 12 45</em>
-</p>
 
 ## Example
 <p>
-	Example: <br> <em>./langtons_ant.out 15 12 25000</em>
+Here's the last printout of the state of the ant at the last turn:
+	<br> <em>./langtons_ant.out 15 12 25000</em>
 </p>
 
 <div>
