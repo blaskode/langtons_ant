@@ -1,3 +1,12 @@
+
+<head>
+	<style>
+body {background-color: powderblue;}
+p    {color: blue;}
+	</style>
+</head>
+
+
 ## langtons_ant.c 
 <p>&nbsp; An implementation of <a href="https://en.wikipedia.org/wiki/Langton%27s_ant">Langton's Ant</a> using the C 2018 standard. Note that the initial placement of the Ant in this program is at random.
 </p>
@@ -29,7 +38,7 @@
 &nbsp; Furthermore, because the Ant has no notion of history (4), and there are a discrete number of head-states (by combining 2, and 3), Langton's Ant can be modeled with automata theory. This can be implemented with the help of a doubly-linked list.
 </p>
 
-## Build Instructions
+## Build/Run Instructions
 <p>
 	<ol>
 		<li>
