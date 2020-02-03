@@ -1,12 +1,4 @@
 
-<head>
-	<style>
-body {background-color: powderblue;}
-p    {color: blue;}
-	</style>
-</head>
-
-
 ## langtons_ant.c 
 <p>&nbsp; An implementation of <a href="https://en.wikipedia.org/wiki/Langton%27s_ant">Langton's Ant</a> using the C 2018 standard. Note that the initial placement of the Ant in this program is at random.
 </p>
